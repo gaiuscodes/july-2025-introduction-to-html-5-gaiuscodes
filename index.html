@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ===== Meta Information ===== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Tim Gaius - Business and Information Technology graduate, passionate about hardware support, web development, and programming.">
+  <meta name="keywords" content="Tim Gaius, Portfolio, Web Development, Programming, Hardware Support, Business and IT">
+  <meta name="author" content="Tim Gaius">
+  
+  <!-- ===== SEO Title ===== -->
+  <title>Tim Gaius | Portfolio & Projects</title>
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header>
+    <h1>Tim Gaius</h1>
+    <p>Business & IT Graduate | Hardware Support | Junior Developer</p>
+  </header>
+
+  <!-- ===== Main Content ===== -->
+  <main>
+    <!-- ===== About Section ===== -->
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+      <p>
+        Hello! I am Tim Gaius, a Business and Information Technology graduate passionate about technology, 
+        especially hardware support, web development, and programming. My goal is to combine technical expertise 
+        with creative problem-solving to deliver impactful digital solutions.
+      </p>
+    </section>
+
+    <!-- ===== Projects Section ===== -->
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <article>
+        <h3>Portfolio Website</h3>
+        <p>
+          A personal portfolio showcasing my work, skills, and experiences. Built with semantic HTML5 
+          and optimized for accessibility and SEO.
+        </p>
+      </article>
+      <article>
+        <h3>Hardware Support Documentation</h3>
+        <p>
+          Developed comprehensive troubleshooting guides for connectors and motherboards to 
+          assist users and technicians in resolving hardware issues efficiently.
+        </p>
+      </article>
+    </section>
+
+    <!-- ===== Contact Section ===== -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contacts</h2>
+      <p>If you’d like to work together, feel free to reach out:</p>
+      <address>
+        <p>Email: <a href="mailto:tim.gaius@gmail.com">tim.gaius@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/timgaius" target="_blank" rel="noopener noreferrer">linkedin.com/in/timgaius</a></p>
+      </address>
+    </section>
+  </main>
+
+  <!-- ===== Footer with Navigation at Bottom ===== -->
+  <footer>
+    <nav aria-label="Page Navigation">
+      <ul>
+        <li><a href="#about" accesskey="1">About</a></li>
+        <li><a href="#projects" accesskey="2">Projects</a></li>
+        <li><a href="#contact" accesskey="3">Contact</a></li>
+      </ul>
+    </nav>
+    <p>&copy; <span id="year"></span> Tim Gaius. All rights reserved.</p>
+  </footer>
+
+  <!-- ===== Accessibility Enhancement: Auto Year Update ===== -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
