@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Demo Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 1rem;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin-right: 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 1rem;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 0.5rem;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        form {
+            max-width: 600px;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            background-color: #fafafa;
+        }
+        fieldset {
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            padding: 1rem;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 0.5rem;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.4rem;
+            margin-top: 0.3rem;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 0.5rem;
+        }
+        button {
+            background-color: #004080;
+            color: white;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #003060;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Enhanced HTML5 Demo Page</h1>
+    <nav aria-label="Main Navigation">
+        <ul>
+            <li><a href="#lists">Lists</a></li>
+            <li><a href="#tables">Tables</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#form">Form</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- Lists Section -->
+    <section id="lists">
+        <h2>Lists Example</h2>
+        <p>Below is an example of an unordered list and an ordered list, each demonstrating clear structure:</p>
+
+        <h3>Unordered List: Web Development Skills</h3>
+        <ul>
+            <li>HTML5 & Accessibility</li>
+            <li>CSS3 Styling</li>
+            <li>JavaScript Fundamentals</li>
+            <li>Responsive Design</li>
+        </ul>
+
+        <h3>Ordered List: Steps to Build a Web Page</h3>
+        <ol>
+            <li>Plan the layout and structure</li>
+            <li>Write semantic HTML5 markup</li>
+            <li>Apply CSS styles for design</li>
+            <li>Add interactivity with JavaScript</li>
+        </ol>
+    </section>
+
+    <!-- Tables Section -->
+    <section id="tables">
+        <h2>Table Example</h2>
+        <p>Below is a table showing sample course information:</p>
+        <table>
+            <caption>Web Development Courses</caption>
+            <thead>
+                <tr>
+                    <th>Course Name</th>
+                    <th>Duration</th>
+                    <th>Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Introduction to HTML5</td>
+                    <td>4 weeks</td>
+                    <td>Beginner</td>
+                </tr>
+                <tr>
+                    <td>CSS3 Advanced Techniques</td>
+                    <td>6 weeks</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>JavaScript Essentials</td>
+                    <td>8 weeks</td>
+                    <td>Beginner</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Media Section -->
+    <section id="media">
+        <h2>Media Examples</h2>
+
+        <h3>Image Example</h3>
+        <img src="https://via.placeholder.com/600x200" alt="Placeholder banner image" width="600" height="200">
+
+        <h3>Video Example</h3>
+        <video controls width="600" aria-label="Sample HTML5 video">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </section>
+
+    <!-- Form Section -->
+    <section id="form">
+        <h2>Accessible HTML5 Form</h2>
+        <form action="#" method="post">
+            
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required aria-required="true">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required aria-required="true">
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required aria-required="true">
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10 digits" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+
+                <label>Preferred Contact Method:</label>
+                <input type="radio" id="contact-email" name="contact-method" value="email" required>
+                <label for="contact-email">Email</label>
+                <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                <label for="contact-phone">Phone</label>
+
+                <label for="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    Subscribe to newsletter
+                </label>
+
+                <label for="satisfaction">Satisfaction Level (1-10):</label>
+                <input type="range" id="satisfaction" name="satisfaction" min="1" max="10">
+            </fieldset>
+
+            <fieldset>
+                <legend>File Upload</legend>
+                <label for="resume">Upload Resume (PDF only):</label>
+                <input type="file" id="resume" name="resume" accept=".pdf" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Comments</legend>
+                <label for="comments">Your Message:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Type here..."></textarea>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p style="text-align:center; padding: 1rem; background-color: #f4f4f4;">
+        &copy; 2025 Enhanced HTML5 Demo Page
+    </p>
+</footer>
+
+</body>
+</html>
