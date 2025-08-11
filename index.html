@@ -1,80 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- ===== Meta Information ===== -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Tim Gaius - Business and Information Technology graduate, passionate about hardware support, web development, and programming.">
-  <meta name="keywords" content="Tim Gaius, Portfolio, Web Development, Programming, Hardware Support, Business and IT">
-  <meta name="author" content="Tim Gaius">
-  
-  <!-- ===== SEO Title ===== -->
-  <title>Tim Gaius | Portfolio & Projects</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timothy Gaius | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+                   
 </head>
 <body>
-  <!-- ===== Header ===== -->
-  <header>
-    <h1>Tim Gaius</h1>
-    <p>Business & IT Graduate | Hardware Support | Junior Developer</p>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ===== HEADER ===== -->\
+   
+            <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
+  <header class="hero-header">
+    <div class="hero-content">
+      <h1 class="animate-name">Timothy <span>Gaius</span></h1>
+      <p class="animate-title">Junior Web Developer</p>
+      <a href="#projects" class="btn-primary animate-btn">View My Work</a>
+    </div>
+    <div class="scroll-indicator"></div>
   </header>
 
-  <!-- ===== Main Content ===== -->
-  <main>
-    <!-- ===== About Section ===== -->
-    <section id="about" aria-labelledby="about-heading">
-      <h2 id="about-heading">About Me</h2>
-      <p>
-        Hello! I am Tim Gaius, a Business and Information Technology graduate passionate about technology, 
-        especially hardware support, web development, and programming. My goal is to combine technical expertise 
-        with creative problem-solving to deliver impactful digital solutions.
-      </p>
-    </section>
+  <!-- ===== ABOUT ME ===== -->
+  <section id="about" class="about-section fade-slide">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="images/timothy.jpg" 
+             alt="Timothy Gaius"
+             onerror="this.src='https://via.placeholder.com/220x220.png?text=Timothy+Gaius';">
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>A passionate <strong>tech enthusiast</strong> transitioning into web development. My drive is fueled by turning <strong>innovative ideas</strong> into impactful solutions.</p>
+        <p>With a background in <strong>Business and IT</strong>, I blend creativity, structure, and problem‑solving to craft <strong>clean, user‑focused experiences</strong>.</p>
+        <p>Currently honing my skills in <strong>Software Engineering</strong> through the <span class="highlight">Power Learn Project Africa</span>.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- ===== Projects Section ===== -->
-    <section id="projects" aria-labelledby="projects-heading">
-      <h2 id="projects-heading">Projects</h2>
-      <article>
-        <h3>Portfolio Website</h3>
-        <p>
-          A personal portfolio showcasing my work, skills, and experiences. Built with semantic HTML5 
-          and optimized for accessibility and SEO.
-        </p>
-      </article>
-      <article>
-        <h3>Hardware Support Documentation</h3>
-        <p>
-          Developed comprehensive troubleshooting guides for connectors and motherboards to 
-          assist users and technicians in resolving hardware issues efficiently.
-        </p>
-      </article>
-    </section>
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="education-section fade-slide">
+    <h2 class="section-title">Education</h2>
+    <ul>
+      <li><strong>Business and Information Technology</strong> – St. Paul University (Graduated: 2022)</li>
+      <li><strong>Software Engineering</strong> – Power Learn Project Africa (Present)</li>
+    </ul>
+    <a href="downloads/TimothyGaius_CV.pdf" class="btn-download" download>Download My CV</a>
+  </section>
 
-    <!-- ===== Contact Section ===== -->
-    <section id="contact" aria-labelledby="contact-heading">
-      <h2 id="contact-heading">Contacts</h2>
-      <p>If you’d like to work together, feel free to reach out:</p>
-      <address>
-        <p>Email: <a href="mailto:tim.gaius@gmail.com">tim.gaius@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/timgaius" target="_blank" rel="noopener noreferrer">linkedin.com/in/timgaius</a></p>
-      </address>
-    </section>
-  </main>
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="projects-section fade-slide">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>Brief description of project 1. Key features and tools used.</p>
+        <a href="https://github.com/yourusername/project1" class="project-link" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>Brief description of project 2. Key features and tools used.</p>
+        <a href="https://github.com/yourusername/project2" class="project-link" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+ <!-- ===== SKILLS ===== -->
+<section id="skills" class="skills-section fade-slide">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+      <p>HTML5</p>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+      <p>CSS3</p>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+      <p>JavaScript</p>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+      <p>PHP</p>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+      <p>MySQL</p>
+    </div>
+  </div>
+</section>
 
-  <!-- ===== Footer with Navigation at Bottom ===== -->
-  <footer>
-    <nav aria-label="Page Navigation">
-      <ul>
-        <li><a href="#about" accesskey="1">About</a></li>
-        <li><a href="#projects" accesskey="2">Projects</a></li>
-        <li><a href="#contact" accesskey="3">Contact</a></li>
-      </ul>
-    </nav>
-    <p>&copy; <span id="year"></span> Tim Gaius. All rights reserved.</p>
+
+  <!-- ===== CONTACT ME ===== -->
+  <section id="contact" class="contact-section fade-slide">
+    <h2>Contact Me</h2>
+    <p class="contact-intro">Let’s connect! Fill the form below to reach out for collaborations or opportunities.</p>
+    <div class="contact-container">
+      <form action="contact.php" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>©Tim Gaius.Codes by coffee</p>
+    <div class="social-links">
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+      <a href="mailto:your.email@example.com">Email</a>
+    </div>
   </footer>
+  
+            <i class="devicon-html5-plain"></i>
+            <i class="devicon-css3-plain"></i>
+          <i class="devicon-javascript-plain colored"></i>
+          
+            <i class="devicon-php-plain colored"></i>
 
-  <!-- ===== Accessibility Enhancement: Auto Year Update ===== -->
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
